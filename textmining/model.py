@@ -44,10 +44,10 @@ class SamsungReport:
 
     @staticmethod
     def remove_stopword():
-        stopfile = './data/stopwords.txt'
+        stopfile = 'C:/Users/ezen/PycharmProjects/tensorflow190803/textmining/data/stopwords.txt'
         with open(stopfile,'r',encoding='utf-8') as f:
             texts = f.read()
-            texts=texts.spilt(' ')
+            texts=texts.split(' ')
             print('-- 제거할 단어 --')
             print(texts[:10])
             return texts
