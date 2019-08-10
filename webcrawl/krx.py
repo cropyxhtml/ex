@@ -8,4 +8,5 @@ class KrxCrawler:
 
     def scrap(self):
         html = requests.get(self.url).text
-        soup = BeautifulSoup(html,'lxml')
+        # soup = BeautifulSoup(html,'lxml')
+        print(html)
